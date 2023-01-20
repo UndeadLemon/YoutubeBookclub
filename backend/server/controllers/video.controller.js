@@ -2,8 +2,8 @@ const { response } = require('express');
 const { Video } = require('../models/video.model')
 
 module.exports.createVideo = (req, res) => {
-    const { title, price, description } = req.body;
-    Video.create({ title, price, description })
+    const { title, url, description } = req.body;
+    Video.create({ title, url, description })
         .then(video => res.json(video))
         .catch(err => res.json(err));
 }

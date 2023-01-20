@@ -77,7 +77,7 @@ const Video = () => {
     }
     return (
         <div>
-            <Typography variant='h3' sx={{margin:'10px'}}>Video Page </Typography>
+            <Typography variant='h3' sx={{marginLeft:'10px'}}>Video Page </Typography>
             <Grid container rowSpacing={{ xs: 1 }} columnSpacing={{ xs: 3 }}>
                 <Grid item xs={7} >
                     {loaded && <ReactPlayer ref={ref} url={video.url} width="100%" height="40em" config={{ youtube: { playerVars: { controls: 1 } } }} />}
